@@ -2,51 +2,80 @@
 <html>
 <head>
 	<title>Blu's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- seperator -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 	
-	<div>
+	<div class ="container">
+        <!--container (everything below this line)-->
+    <div class="intro">
 		<img src="https://via.placeholder.com/150" />
 		<h1>Blu</h1>
 		<h3>Self-Employed</h3>
-		<p>{{ Never let fear trap you }}</p>
+		<p class="quote">
+            {{ Never let fear trap you }}</p>
 	</div>
 
-	<div>
-		<h1>I am</h1>
-		<ul>
-			<li>An artist.</li>
-			<li>A journalist.</li>
-			<li>A reader.</li>
+	<div class="about-grid">
+        <div class="i-am">
+		<h3>I am</h3>
+		<ul class="about-list">
+			<li class="descriptive-text">An artist.</li>
+			<li class="descriptive-text">A journalist.</li>
+			<li class="descriptive-text">A reader.</li>
 		</ul>
-	</div>
-	<div>
-		<h1>I like to</h1>
-		<ul>
-				<li>Learn new skills.</li>
-				<li>Try new things.</li>
-				<li>Go for walks.</li>
+        </div>
+   
+	<div class="i-like">
+		<h3>I like to</h3>
+		<ul class="about-list">
+				<li class="descriptive-text">Learn new skills.</li>
+				<li class="descriptive-text">Draw till my hands hurt.</li>
+				<li class="descriptive-text">Explore new trails and nature.</li>
 		</ul>
+        </div>
 	</div>
-
-	<div>
-		<h3>My Projects</h3>
-		<img src="https://via.placeholder.com/300" />
-		<img src="https://via.placeholder.com/300" />
-		<img src="https://via.placeholder.com/300" />
-		<img src="https://via.placeholder.com/300" />
+ <div>
+		<h3 class ="projects-heading">My Projects</h3>
+        <div class="projects-grid">
+		    <img class="project-image" src="https://via.placeholder.com/300" />
+            <img class="project-image" src="https://via.placeholder.com/300" />
+            <img class="project-image" src="https://via.placeholder.com/300" />
+		    <img class="project-image" src="https://via.placeholder.com/300" />
 	</div>
-
-	<div>
+</div>
+	<div class="links-and-contact">
+        <div class="links">
 		<h3>Links</h3>
-		<ul>
-		
+		<ul class="links-list">
+		<!-- links below this line-->
 		<li>
 			<a href="https://github.com/xbabyblu">Github</a>
 		</li>
+
+        <li> 
+            <a href= "https://www.deviantart.com/xo-babyblu">Deviantart</a>
+        </li>
+
+        <li> 
+            <a href= "https://instagram.com/ItamiTheDemiBat">Instagram</a>
+        </li>
+
+        <li>
+            <a href="https://ko-fi.com/itamidoesart">Ko-Fi</a>
+        </li>
+
+        <li>
+            <a href="https://www.patreon.com/ItamiDoesArt">Patreon</a>
+        </li>
+
+        <!-- links above this line-->
 	</ul>
 	</div>
-
+    <!--contact form below this line-->
+    </div>
 	<div>
 		<form action="#">
 			<label for="email">
@@ -57,6 +86,8 @@
 		</label>
 		<input type="submit" value="Send Message">
 	</form>
+    <!--container(everything above this line)-->
+    </div>
 </div>
 </body>
 </html>
