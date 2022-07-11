@@ -3,6 +3,7 @@
 <head>
 	<title>Blu's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
     <!-- seperator -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -11,13 +12,13 @@
 	<div class ="container">
         <!--container (everything below this line)-->
     <div class="intro">
-		<img src="https://via.placeholder.com/150" />
+		<img class="profile-picture" src="images/profile-picture.jpg" />
 		<h1>Blu</h1>
 		<h3>Self-Employed</h3>
 		<p class="quote">
             {{ Never let fear trap you }}</p>
 	</div>
-
+<hr></hr>
 	<div class="about-grid">
         <div class="i-am">
 		<h3>I am</h3>
@@ -36,14 +37,16 @@
 				<li class="descriptive-text">Explore new trails and nature.</li>
 		</ul>
         </div>
+	
 	</div>
- <div>
+	<hr></hr>
+ <div>      
 		<h3 class ="projects-heading">My Projects</h3>
         <div class="projects-grid">
-		    <img class="project-image" src="https://via.placeholder.com/300" />
-            <img class="project-image" src="https://via.placeholder.com/300" />
-            <img class="project-image" src="https://via.placeholder.com/300" />
-		    <img class="project-image" src="https://via.placeholder.com/300" />
+		    <img class="project-image" src="images/project-1.jpg" />
+            <img class="project-image" src="images/project-2.jpg" />
+            <img class="project-image" src="images/project-3.jpg" />
+		    <img class="project-image" src="images/project-4.jpg" />
 	</div>
 </div>
 	<div class="links-and-contact">
@@ -75,19 +78,24 @@
 	</ul>
 	</div>
     <!--contact form below this line-->
-    </div>
+
 	<div>
 		<form action="#">
 			<label for="email">
-			Email: <input id="email" placeholder="Enter your email" />
+			<h4>Email</h4>
+			<input type="email" id="email" placeholder="Enter your email address" />
 		</label>
 		<label for="message">
-			Message: <textarea id="message">Your Message</textarea>
+			<h4>Message</h4>
+			<textarea id="message">Your Message</textarea>
 		</label>
-		<input type="submit" value="Send Message">
+		<div class="submit-button-wrapper">
+			<input type="submit" valid="Send Message" />
+		</div>
 	</form>
     <!--container(everything above this line)-->
     </div>
+	</div>
 </div>
 </body>
 </html>
